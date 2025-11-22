@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Prakhar Innovations at CMPN</title>
+    <base href="/prakhar-innovations-cmpn/">
     <link rel="icon" href="images/prakhar-logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/css/aos.css" rel="stylesheet">
@@ -21,7 +22,7 @@
         <nav class="council-bar navbar navbar-expand-lg">
             <div class="container">
 
-                <a class="navbar-brand fw-bold d-flex align-items-center" href="/index.html">
+                <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
                     <img src="images/prakhar-logo.png" alt="Council Logo" height="50" class="me-2">
                     Prakhar Innovations @ CMPN
                 </a>
@@ -266,10 +267,6 @@
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-
-            loadComponent('header-placeholder', 'components/header.html');
-            loadComponent('footer-placeholder', 'components/footer.html');
-
             AOS.init();
 
             setTimeout(() => {
