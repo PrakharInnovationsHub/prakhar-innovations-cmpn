@@ -1,0 +1,95 @@
+body {
+    padding-top: 112px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.college-bar {
+    background: #0C2B4E;
+    color: #fff;
+    padding: 4px 0;
+    font-size: 20px;
+}
+
+.council-bar {
+    background: #0C2B4E;
+    color: #fff;
+}
+
+.purpose-card {
+    background-color: #217c7c;
+    color: #fff;
+}
+
+.council-bar .navbar-brand,
+.council-bar .nav-link {
+    color: #fff !important;
+}
+
+.text-custom-justify {
+    text-align: justify !important;
+}
+
+.navbar-brand img {
+    border-radius: 6px;
+}
+
+.hero {
+    height: calc(100vh - 112px);
+    background: linear-gradient(rgba(190, 189, 189, 0.65), rgba(67, 67, 67, 0.65)),
+        url('../images/bg.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-weight: 700 !important;
+    display: inline-block;
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-left: 5px solid #4d79ff;
+    padding-left: 10px;
+}
+
+.team-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4d79ff;
+}
+
+.role-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-top: -4px;
+}
+
+.college-bar small strong a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#about p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#typing-cursor {
+    animation: blink 0.75s infinite;
+    color: inherit; 
+    margin-left: 0.1em;
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none !important;
+}
