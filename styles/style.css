@@ -82,7 +82,6 @@ body {
     text-align: justify;
 }
 
-/* Fix for long email address on small screens */
 .email-break {
     word-break: break-all; 
     overflow-wrap: break-word; 
@@ -136,12 +135,17 @@ body {
 
 @media (max-width: 991.98px) {
     .council-bar .navbar-brand {
-        font-size: 1.15rem !important;
+        font-size: 1.05rem !important;
+    }
+
+    .council-bar .navbar-brand img {
+        height: 35px !important;
     }
 
     .college-bar small {
-        font-size: 0.75rem !important;
+        font-size: 0.7rem !important;
         text-align: center;
+        line-height: 1.2;
     }
     
     .college-bar {
