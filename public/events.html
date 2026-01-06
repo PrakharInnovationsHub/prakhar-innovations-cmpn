@@ -146,13 +146,15 @@
         <div class="col-md-5">
           <div class="d-flex flex-column h-100 justify-content-between">
             <div class="mb-3">
-              <h5 class="fw-bold mb-1" id="videoTitle">
+              <h5 class="fw-bold mb-1">
                 Innovators School: From Prompt to Product — Agentic AI for
                 Startups
               </h5>
+
               <p class="text-primary small mb-2 fw-bold">
-                <i class="far fa-calendar-alt me-1"></i> 4th December 2025
+                <i class="far fa-calendar-alt me-1"></i> 2nd December 2025
               </p>
+
               <p
                 class="small text-secondary mb-0 text-custom-justify"
                 id="videoDesc"
@@ -182,7 +184,7 @@
                   <div class="d-flex align-items-center">
                     <i class="fas fa-play-circle me-2 opacity-75"></i>
                     <div>
-                      <span class="d-block small fw-bold">Part 1: Intro</span>
+                      <span class="d-block small fw-bold">Part 1: Introduction</span>
                     </div>
                   </div>
                   <span class="badge bg-light text-dark rounded-pill ms-2"
@@ -492,7 +494,8 @@
         videoPlayer.play();
 
         // 4. Update Text Info
-        document.getElementById("videoTitle").innerText = title;
+        // REMOVED: document.getElementById("videoTitle").innerText = title;
+        // Keeping description update if you want the small text to change
         document.getElementById("videoDesc").innerText = desc;
 
         // 5. Update Active Styles (Visuals)
