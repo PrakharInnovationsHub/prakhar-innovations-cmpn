@@ -11,117 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <style>
-    /* Custom scrollbar for the video playlist */
-    .custom-scrollbar::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    .btn {
-      border: 2px solid blue;
-      display: flex;
-      justify-content: center;
-      background-color: blue;
-      color: white;
-    }
-
-    .btn:hover {
-      background-color: white;
-      color: blue;
-    }
-
-    .custom-scrollbar::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 3px;
-    }
-
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-
-    /* Playlist Item Styles */
-    .list-group-item.active {
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-    }
-
-    .list-group-item.active .text-muted {
-      color: #e0e0e0 !important;
-    }
-
-    .list-group-item {
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .list-group-item:hover:not(.active) {
-      background-color: #f8f9fa;
-    }
-
-    /* Minimal event CTA */
-    .btn-minimal {
-      display: inline-block;
-      background: transparent;
-      border: 1px solid #0d6efd;
-      color: #0d6efd;
-      padding: .18rem .5rem;
-      border-radius: .25rem;
-      font-weight: 500;
-      text-decoration: none;
-      font-size: .95rem;
-    }
-
-    .btn-minimal:hover {
-      background: #0d6efd;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* CTA that follows surrounding text font but appears as a compact button */
-    .cta-text-btn {
-      display: inline-block;
-      background: transparent;
-      color: #0d6efd;
-      border: none;
-      padding: .12rem .35rem;
-      border-radius: .2rem;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: inherit;
-      font-family: inherit;
-      line-height: 1;
-    }
-
-    .cta-text-btn:hover {
-      background: rgba(13,110,253,0.06);
-      text-decoration: underline;
-      color: #0b5ed7;
-    }
-
-    /* LinkedIn post link style: slightly larger, inherit page font, underlined */
-    .linked-post {
-      font-size: 1rem;
-      font-family: inherit;
-      text-decoration: underline;
-      color: #0d6efd;
-      font-weight: 600;
-    }
-
-    .linked-post:hover {
-      color: #0b5ed7;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Header Section -->
   <div id="header-placeholder">
     <div class="fixed-top shadow-sm">
       <nav class="council-bar navbar navbar-expand-lg">
@@ -135,18 +28,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team2025-26.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="vision-keepers.html">Faculty</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="team2025-26.html">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="vision-keepers.html">Faculty</a></li>
             </ul>
           </div>
         </div>
@@ -154,334 +39,142 @@
       <div class="college-bar d-flex align-items-center justify-content-center">
         <img src="images/vesit-logo.png" alt="VESIT Logo" height="50" class="me-2" />
         <small><strong><a href="https://vesit.ves.ac.in/">Vivekanand Education Society's Institute Of
-              Technology</a></strong>
-          · Department of Computer Engineering</small>
+              Technology</a></strong> · Department of Computer Engineering</small>
       </div>
     </div>
   </div>
-  
+
   <div class="container py-5" style="margin-top: 4px">
-    <h2 class="section-title my-5" data-aos="fade-right">Upcoming Events</h2>
-    <article class="row g-4 mb-5 align-items-center border-bottom pb-4" data-aos="fade-up">
-      <div class="col-md-6">
-        <div id="CarouselUpcoming" class="carousel slide shadow-sm overflow-hidden" data-bs-ride="carousel">
-          <div class="carousel-inner" style="height: 460px">
-            <div class="carousel-item active d-flex align-items-center justify-content-center h-100">
-              <img src="images/cohort_1_paawan_flyer.png" class="d-block object-fit-contain h-100" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h5 class="fw-bold">Startup Interaction & Learning Series – Cohort I | Ideation & Market Strategy
-        </h5>
-        <p class="text-custom-justify">
-          Organized an expert-led startup learning session focused on ideation, problem-first thinking, and market
-          strategy, featuring real-world insights from an early-stage founder.
-          <!-- <a href="https://www.linkedin.com/posts/ves-institute-of-technology_vesit-innovation-ai-activity-7374332952945627136-O-NT" target="_blank" rel="noopener noreferrer" class="linked-post">LinkedIn Post</a> -->
-        </p>
-        <div class="pt-3 border-top">
-          <small class="fw-bold text-dark">Date: 13th January 2026</small><br />
-          <small class="fw-bold text-dark">Time : 5.00 PM to 7.00 PM</small><br />
-
-          <small class="text-primary">Speaker: Mr. Paawan Matani, Founder &amp; CEO, FAD<br />Mode: <a href="https://meet.google.com/zvm-syfy-utp" target="_blank" rel="noopener noreferrer">Google Meet</a></small>
-
-           <p class="small mb-0"> <br><strong>About the Session :</strong> </p>
-          <ul class="small mb-0 mt-2">
-            <li>Journey from idea to startup (FAD case study)</li>
-            <li>Problem-first thinking and early validation</li>
-            <li>Early users, business model, and go-to-market strategy</li>
-            <li>Founder mistakes, learnings, and open Q&amp;A</li>
-          </ul>
-        </div>
-        
-        <div class="mt-3">
-          <p class="small fw-bold text-danger"> This session is open to all S.E. students and is mandatory for Internship (Buildathon) participants. Attendance will be recorded.</p>
-
-         
-        </div>
-      </div>
-    </article>
-
-    <h2 class="section-title my-5" data-aos="fade-right">Recent Event</h2>
+    <h2 class="section-title my-5" data-aos="fade-right">Events & Workshops</h2>
 
     <article class="row g-4 mb-5 align-items-start border-bottom pb-4" data-aos="fade-up">
-      <div class="col-md-7">
-        <div class="ratio ratio-16x9 shadow rounded overflow-hidden" style="background: #000">
-          <video id="mainVideoPlayer" controls class="object-fit-contain">
-            <source src="videos/SEBuildathonClips25-26/Part1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-
-      <div class="col-md-5">
-        <div class="d-flex flex-column h-100 justify-content-between">
-          <div class="mb-3">
-            <h5 class="fw-bold mb-1">
-              Innovators School: From Prompt to Product — Agentic AI for
-              Startups
-            </h5>
-
-
-              <p class="text-primary small mb-1 fw-bold">
-                <i class="far fa-calendar-alt me-1"></i> 2nd December 2025
-              </p>
-              <p class="mb-2">
-                <a class="cta-text-btn" href="innovator_school.html"> Know More</a>
-                <a href="https://www.linkedin.com/posts/prakhar-innovations-cmpn-vesit_prakharinnovations-innovatorsschool-iic-activity-7416503960368218112-odFh/" target="_blank" rel="noopener noreferrer" class="linked-post ms-2">LinkedIn Post</a>
-              </p>
-
-            <p class="small text-secondary mb-0 text-custom-justify" id="videoDesc">
-              Select a clip below to watch the screen recordings from the
-              meet.
-            </p>
-          </div>
-
-          <div class="card shadow-sm border-0 bg-light">
-            <div class="card-header bg-white border-bottom py-2">
-              <small class="fw-bold text-uppercase text-muted" style="letter-spacing: 1px">Session Recordings</small>
-            </div>
-
-            <div class="list-group list-group-flush overflow-auto custom-scrollbar" style="max-height: 220px">
-              <button
-                class="list-group-item list-group-item-action active d-flex justify-content-between align-items-center py-2"
-                onclick="changeVideo('videos/SEBuildathonClips25-26/Part1.mp4', 'Session 1: Introduction', 'Start of the event.', this)">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-play-circle me-2 opacity-75"></i>
-                  <div>
-                    <span class="d-block small fw-bold">Part 1: Introduction</span>
-                  </div>
-                </div>
-                <span class="badge bg-light text-dark rounded-pill ms-2">View</span>
-              </button>
-
-              <button
-                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"
-                onclick="changeVideo('videos/SEBuildathonClips25-26/Part2.mp4', 'Session 2: Tech Discussion', 'Technical discussion screen recording.', this)">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-play-circle me-2 opacity-50"></i>
-                  <div>
-                    <span class="d-block small fw-bold">Part 2: Why Market Research?</span>
-                  </div>
-                </div>
-                <span class="badge bg-white text-secondary border rounded-pill ms-2">View</span>
-              </button>
-
-              <button
-                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"
-                onclick="changeVideo('videos/SEBuildathonClips25-26/Part3.mp4', 'Session 2: Tech Discussion', 'Technical discussion screen recording.', this)">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-play-circle me-2 opacity-50"></i>
-                  <div>
-                    <span class="d-block small fw-bold">Part 3: Explaining why analyzing competitors is
-                      essential.</span>
-                  </div>
-                </div>
-                <span class="badge bg-white text-secondary border rounded-pill ms-2">View</span>
-              </button>
-              <button
-                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"
-                onclick="changeVideo('videos/SEBuildathonClips25-26/Part4.mp4', 'Session 2: Tech Discussion', 'Technical discussion screen recording.', this)">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-play-circle me-2 opacity-50"></i>
-                  <div>
-                    <span class="d-block small fw-bold">Part 4: Why is SRS important for developing any
-                      software project?</span>
-                  </div>
-                </div>
-                <span class="badge bg-white text-secondary border rounded-pill ms-2">View</span>
-              </button>
-              <button
-                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"
-                onclick="changeVideo('videos/SEBuildathonClips25-26/Part7.mp4', 'Session 2: Tech Discussion', 'Technical discussion screen recording.', this)">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-play-circle me-2 opacity-50"></i>
-                  <div>
-                    <span class="d-block small fw-bold">Part 5: Generation of Userflow Diagram.</span>
-                  </div>
-                </div>
-                <span class="badge bg-white text-secondary border rounded-pill ms-2">View</span>
-              </button>
-
-              <button
-                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"
-                onclick="changeVideo('videos/SEBuildathonClips25-26/Part8.mp4', 'Session 2: Tech Discussion', 'Technical discussion screen recording.', this)">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-play-circle me-2 opacity-50"></i>
-                  <div>
-                    <span class="d-block small fw-bold">Part 6: Generation of Architecture.</span>
-                  </div>
-                </div>
-                <span class="badge bg-white text-secondary border rounded-pill ms-2">View</span>
-              </button>
-
-              <button
-                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"
-                onclick="changeVideo('videos/SEBuildathonClips25-26/Part9.mp4', 'Session 2: Tech Discussion', 'Technical discussion screen recording.', this)">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-play-circle me-2 opacity-50"></i>
-   
-                  <div>
-                    <span class="d-block small fw-bold">Part 7: Design Generation for the UI using Figma.</span>
-                  </div>
-                </div>
-                <span class="badge bg-white text-secondary border rounded-pill ms-2">View</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </article>
-
-    </article>
-    <h2 class="section-title my-5" data-aos="fade-right">Events</h2>
-    <article class="row g-4 mb-5 align-items-center border-bottom pb-4" data-aos="fade-up">
       <div class="col-md-6">
-        <div id="Carousel" class="carousel slide shadow-sm overflow-hidden" data-bs-ride="carousel">
-          <div class="carousel-inner" style="height: 300px">
-            <div class="carousel-item active d-flex align-items-center justify-content-center h-100">
-              <img src="images/business-pitch-poster.jpg" class="d-block object-fit-contain h-100" />
-            </div>
-          </div>
+        <div class="event-media-container shadow-sm">
+          <img src="images/cohort_1_paawan_flyer.png" alt="Startup Interaction Flyer" />
         </div>
       </div>
       <div class="col-md-6">
-        <h5 class="fw-bold">Business Pitch – AI Driven Innovation</h5>
-        <p class="text-custom-justify">
-          Organized a Business Pitch competition for 40+ teams focused on AI
-          Driven Innovation.
-          <a
-            href="https://www.linkedin.com/posts/ves-institute-of-technology_vesit-innovation-ai-activity-7374332952945627136-O-NT">LinkedIn
-            Post</a>
+        <h5 class="fw-bold">Startup Interaction & Learning Series - Cohort I | Ideation & Market Strategy | Online</h5>
+        <p class="text-custom-justify mb-2">
+          Organized an expert-led startup learning session focused on ideation, problem-first thinking, and market
+          strategy.
         </p>
-        <div class="pt-3 border-top">
-          <small class="fw-bold text-dark">Date: 18 & 22 September 2025</small><br />
-          <small class="text-primary">Coordinators: Dr. M. D. Patil, Prof. Nusrat Ansari & Prof. Sanjay
-            Mirchandani</small>
-        </div>
-      </div>
-    </article>
+        <div class="pt-2 event-details-text">
+          <small class="d-block"><strong>Date:</strong> 13th January 2026</small>
+          <small class="d-block"><strong>Speaker:</strong> Mr. Paawan Matani, Founder & CEO, FAD</small>
 
-    <article class="row g-4 mb-5 align-items-center border-bottom pb-4" data-aos="fade-up">
-      <div class="col-md-6">
-        <div id="Carousel2" class="carousel slide shadow-sm overflow-hidden" data-bs-ride="carousel">
-          <div class="carousel-inner" style="height: 300px">
-            <div class="carousel-item active">
-              <img src="images/project-demo-1.jpeg" class="d-block w-100 object-fit-cover h-100" />
-            </div>
-            <div class="carousel-item">
-              <img src="images/project-demo-2.jpeg" class="d-block w-100 object-fit-cover h-100" />
-            </div>
-            <div class="carousel-item">
-              <img src="images/project-demo-3.jpeg" class="d-block w-100 object-fit-cover h-100" />
-            </div>
+          <div class="mt-2">
+            <a href="https://www.linkedin.com/posts/prakhar-innovations-cmpn-vesit_prakharinnovations-startuplearning-entrepreneurship-activity-7417100540574253056-zj-U?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5WVakBQRCCtuabhjcmqIsNhf_kjh6XOK0"
+              target="_blank" class="linked-post">LinkedIn Post</a>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#Carousel2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#Carousel2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h5 class="fw-bold">Project Demonstration</h5>
-        <p class="text-custom-justify">
-          Demonstrated innovative student projects to Panache DigiLife Ltd.
-        </p>
-        <div class="pt-3 border-top">
-          <small class="fw-bold text-dark">Date: 20 September 2025</small><br />
-          <small class="text-primary">Coordinators: Prakhar Innovation Council Faculty</small>
         </div>
       </div>
     </article>
 
-    <article class="row g-4 mb-5 align-items-center border-bottom pb-4" data-aos="fade-up">
-      Adding more soon...
+    <article class="row g-4 mb-5 align-items-start border-bottom pb-4" data-aos="fade-up">
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden bg-black" style="height: 350px;">
+          <iframe src="https://www.youtube.com/embed/av9PDPCtSB4?si=aJlyhWPHoniZC4SW" title="Innovators School Video"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold">Innovators School: From Prompt to Product | Workshop | Online</h5>
+        <p class="text-custom-justify mb-2">
+          Watch highlights of our session on transitioning from prompts to products, featuring live demonstrations on
+          architecture and UI design.
+        </p>
+        <div class="pt-2 event-details-text">
+          <small class="d-block"><strong>Date:</strong> 2nd December 2025</small>
+          <small class="d-block"><strong>Speaker:</strong> Manish Raje & Taha Sayyed, Tech Support Members, Prakhar
+            Innovations</small>
+
+
+          <div class="mt-2">
+            <a href="https://www.linkedin.com/posts/prakhar-innovations-cmpn-vesit_prakharinnovations-innovatorsschool-iic-activity-7416503960368218112-odFh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5WVakBQRCCtuabhjcmqIsNhf_kjh6XOK0"
+              target="_blank" class="linked-post">LinkedIn Post</a>
+          </div>
+
+          <div class="badge-only-container">
+            <img src="images/badge_architecture.png" class="badge-icon" alt="Architecture Badge"
+              title="Best Architecture">
+            <img src="images/badge_designer.png" class="badge-icon" alt="Designer Badge" title="Best Designer">
+            <img src="images/badge_Researcher.png" class="badge-icon" alt="Researcher Badge" title="Best Researcher">
+          </div>
+        </div>
+      </div>
     </article>
+
+    <article class="row g-4 mb-5 align-items-start border-bottom pb-4" data-aos="fade-up">
+      <div class="col-md-6">
+        <div class="event-media-container shadow-sm">
+          <img src="images/business-pitch-poster.jpg" alt="Business Pitch Poster" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold">Business Pitch – AI Driven Innovation | Offline</h5>
+        <p class="text-custom-justify mb-2">Organized a competition for 40+ teams focused on AI Driven Innovation.</p>
+        <div class="pt-2 event-details-text">
+          <small class="d-block"><strong>Date:</strong> 18 & 22 September 2025</small>
+          <div class="mt-2">
+            <a href="https://www.linkedin.com/posts/ves-institute-of-technology_vesit-innovation-ai-activity-7374332952945627136-O-NT"
+              target="_blank" class="linked-post">LinkedIn Post</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="text-center text-muted py-4" data-aos="fade-up">
+      <p>Adding more soon...</p>
+    </div>
   </div>
 
-  <div id="footer-placeholder">
-    <footer class="text-center py-4 bg-light">
-      <div class="container">
-        <div class="mb-4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4094415404234!2d72.8892177!3d19.045727499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8add9569a29%3A0xb7ad04bf9a389df7!2sVivekanand%20Education%20Society's%20Institute%20Of%20Technology%20(VESIT)!5e0!3m2!1sen!2sin!4v1763820618637!5m2!1sen!2sin"
-            width="100%" height="200" style="border: 0; margin: auto" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="mb-3">
-          <p class="small text-dark mb-1">
-            <i class="fas fa-envelope fa-fw me-2"></i> Email:
-            prakhar_innovation.cmpn@ves.ac.in
-          </p>
-          <div class="social-icons mt-2">
-            <a href="https://www.linkedin.com/company/prakhar-innovations-cmpn-vesit"
-              class="text-dark mx-3 fs-5 text-decoration-none" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/PrakharInnovationsHub" class="text-dark mx-3 fs-5 text-decoration-none"
-              target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        <small class="d-block border-top pt-3">© <span id="current-year">2025</span> Prakhar Innovations @
-          CMPN</small>
+  <footer class="text-center py-4 bg-light">
+    <div class="container">
+      <div class="mb-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4094415404234!2d72.8892177!3d19.045727499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8add9569a29%3A0xb7ad04bf9a389df7!2sVivekanand%20Education%20Society's%20Institute%20Of%20Technology%20(VESIT)!5e0!3m2!1sen!2sin!4v1763820618637!5m2!1sen!2sin"
+          width="100%" height="200" style="border: 0; margin: auto" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-    </footer>
-  </div>
+
+      <div class="mb-3">
+        <p class="small text-dark mb-1">
+          <i class="fas fa-envelope fa-fw me-2"></i> Email:
+          prakhar_innovation.cmpn@ves.ac.in
+          <span class="mx-2">|</span>
+          <i class="fas fa-map-marker-alt fa-fw me-2"></i> Location: HAMC,
+          Collector's Colony Chembur, Mumbai, Maharashtra 400074
+        </p>
+
+        <div class="social-icons mt-2">
+          <a href="https://www.linkedin.com/company/prakhar-innovations-cmpn-vesit"
+            class="text-dark mx-3 fs-5 text-decoration-none" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/PrakharInnovationsHub" class="text-dark mx-3 fs-5 text-decoration-none"
+            target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <small class="d-block border-top pt-3">
+        © <span id="current-year">2025</span> Prakhar Innovations, Department
+        of Computer Engineering, VESIT · All Rights Reserved
+      </small>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/js/aos.js"></script>
   <script>
-    let btn = document.getElementsByClassName("btn")[0];
-    btn.addEventListener("click", function () {
-      window.location.href = "innovator_school.html";
-    });
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init();
-      setTimeout(() => {
-        const yearElement = document.getElementById("current-year");
-        if (yearElement) {
-          yearElement.textContent = new Date().getFullYear();
-        }
-      }, 100);
+      const yearElement = document.getElementById("current-year");
+      if (yearElement) { yearElement.textContent = new Date().getFullYear(); }
     });
-
-    // --- UPDATED SCRIPT FOR LOCAL VIDEOS ---
-    function changeVideo(videoPath, title, desc, element) {
-      // 1. Get the video player element
-      const videoPlayer = document.getElementById("mainVideoPlayer");
-
-      // 2. Change the source
-      videoPlayer.src = videoPath;
-
-      // 3. Play the new video automatically
-      videoPlayer.play();
-
-      // 4. Update Text Info
-      // REMOVED: document.getElementById("videoTitle").innerText = title;
-      // Keeping description update if you want the small text to change
-      document.getElementById("videoDesc").innerText = desc;
-
-      // 5. Update Active Styles (Visuals)
-      const buttons =
-        element.parentElement.getElementsByClassName("list-group-item");
-      for (let btn of buttons) {
-        btn.classList.remove("active");
-        btn.classList.remove("bg-primary");
-        btn.classList.remove("text-white");
-
-        const icon = btn.querySelector(".fa-play-circle");
-        if (icon) icon.classList.add("opacity-50");
-      }
-
-      element.classList.add("active");
-
-      const activeIcon = element.querySelector(".fa-play-circle");
-      if (activeIcon) activeIcon.classList.remove("opacity-50");
-    }
   </script>
 </body>
 
